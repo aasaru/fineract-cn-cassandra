@@ -31,13 +31,13 @@ plugins {
 }
 
 group 'org.apache.fineract.cn'
-version '0.1.0-BUILD-SNAPSHOT'
+version '0.0.x-SNAPSHOT'
 
 ext.versions = [
         springcontext : '4.3.3.RELEASE',
         springboot    : '1.4.1.RELEASE',
         findbugs      : '3.0.1',
-        frameworklang : '0.1.0-BUILD-SNAPSHOT'
+        frameworklang : '0.0.x-SNAPSHOT'
 ]
 
 tasks.withType(JavaCompile) {
@@ -56,7 +56,7 @@ dependencies {
             [group: 'org.springframework', name: 'spring-context', version: versions.springcontext],
             [group: 'com.google.code.findbugs', name: 'jsr305', version: versions.findbugs],
             [group: 'org.apache.fineract.cn', name: 'lang', version: versions.frameworklang],
-            [group: 'com.datastax.cassandra', name: 'cassandra-driver-core', version: '3.0.1'],
+            [group: 'com.datastax.cassandra', name: 'cassandra-driver-core', version: '3.1.2'],
             [group: 'com.datastax.cassandra', name: 'cassandra-driver-mapping', version: '3.0.1'],
             [group: 'com.datastax.cassandra', name: 'cassandra-driver-extras', version: '3.0.1']
     )
